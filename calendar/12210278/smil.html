@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Table</h2>
+
+
+<table style="width: 100%;">
+  <colgroup>
+    <col span="1" style="background-color:   #f30b0b">
+    <col span="2" style="background-color:   #2909c9">
+    <col span="3" style="background-color:   #13c9098a">
+  </colgroup>
+<tr>
+<th>Red</th>
+<th>blue</th>
+<th>green</th>
+</tr>
+<head>
+	<meta charset="utf-8">
+	<title>
+	javascript
+	</title>
+
+	<style>
+		.th{
+			position: absolute;
+			background: #E73C49;
+			width: 300px;
+			height: 250px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	</style>
+</head>
+
+<body>
+	<div class="first"></div>
+
+	<script type="text/javascript">
+		var color = [, "#3C9EE7", "#E7993C",
+			"#E73C99", "#3CE746", "#E7993C"];
+
+		document.querySelector("div").addEventListener(
+					"mouseover", function () {
+
+			document.querySelector("div").style.background
+				= color[Math.floor(Math.random() * color.length)];
+		})
+	</script>
+</body>
+
+</html>
